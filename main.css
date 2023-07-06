@@ -7,8 +7,8 @@
     --neutral-dark: #292e47;
     --neutral-medium: #6b708d;
     --neutral-light: #f2f4fc;
-    --neutral-lightblue: #ecf7ff;
-    --secondary: #ffc600;
+    --neutral-lightblue: #a7d2f1;
+    --main-yellow-color: #ffc600;
     --max-width: 1200px;
   }
   
@@ -17,6 +17,7 @@
     max-width: var(--max-width);
     margin: auto;
     padding: 5rem;
+    scroll-behavior: smooth;
   }
   
   body {
@@ -25,6 +26,27 @@
     background-color: #f2f4fc;
   }
   
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--neutral-light);
+    color: var(--neutral-dark);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 20px;
+    z-index: 99;
+  }
+  
+
+  #myBtn:hover {
+    background-color: var(--neutral-dark);
+  }
+
   .h1-heading {
     font-size: 60px;
     font-weight: bold;
@@ -44,7 +66,7 @@
   .h4-heading {
     font-size: 24px;
     font-weight: bold;
-    color: var(--neutral-mediumr);
+    color: var(--neutral-medium);
   }
   
   .text-medium {
@@ -88,6 +110,7 @@
     background-color: white;
     padding: 2rem;
     margin: 1rem;
+    box-shadow: 0 38px 77px rgba(0, 0, 0, 0.1);
   }
   
   .cards__card__icon {
@@ -100,7 +123,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    background-color: var(--neutral-medium);
+    background-color: var(--primary-hover);
   }
   
   .cards__card__icon img {
@@ -290,6 +313,17 @@
     font-weight: 600;
   }
   
+  .just_a_link {
+    color: var(--neutral-medium);
+    text-decoration: none;
+  }
+
+  .just_a_link:hover {
+    color: var(--primary-default);
+    font-weight: 600;
+    font-size: larger;
+  }
+
   #navbar__menu__icon{
     display: none;
   }
@@ -668,7 +702,7 @@
 
 /*  */
 
-  .cta-section {
+  .home-section {
     background-color: var(--main-yellow-color);
     display: flex;
     flex-direction: column;
@@ -699,30 +733,30 @@
   }
   
   @media only screen and (max-width: 700px) {
-    .cta-section {
+    .home-section {
       display: flex;
       flex-direction: column;
     }
   
-    .cta-section h3 {
+    .home-section h3 {
       text-align: center;
     }
   
-    .cta-section__mail {
+    .home-section__mail {
       display: flex;
       flex-direction: column;
     }
-    .cta-section__subscribe-button {
+    .home-section__subscribe-button {
       margin-top: 1rem;
     }
   
-    .cta-section__mail-input {
+    .home-section__mail-input {
       background: url(/assets/newsletter/icon/mail.svg) no-repeat 10px;
       background-color: white;
       background-size: 15px;
       padding: 1rem 2rem;
     }
-    .cta-section__subscribe-button {
+    .home-section__subscribe-button {
       padding: 1rem 2rem;
     }
   }
@@ -851,3 +885,6 @@
       width: 80%;
     }
   }
+
+
+
