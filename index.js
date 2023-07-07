@@ -1,3 +1,6 @@
+
+// This it the section for the scroll up button 
+
 // Get the button
 let mybutton = document.getElementById("myBtn");
 
@@ -17,3 +20,5 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+    
+
