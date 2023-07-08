@@ -702,7 +702,7 @@
 
 /*  */
 
-  .home-section {
+  #home-section {
     background-color: var(--main-yellow-color);
     display: flex;
     flex-direction: column;
@@ -733,12 +733,12 @@
   }
   
   @media only screen and (max-width: 700px) {
-    .home-section {
+    #home-section {
       display: flex;
       flex-direction: column;
     }
   
-    .home-section h3 {
+    #home-section h3 {
       text-align: center;
     }
   
@@ -751,7 +751,7 @@
     }
   
     .home-section__mail-input {
-      background: url(/assets/newsletter/icon/mail.svg) no-repeat 10px;
+      background: url(/newsletter/icon/mail.svg) no-repeat 10px;
       background-color: white;
       background-size: 15px;
       padding: 1rem 2rem;
